@@ -1,0 +1,64 @@
+using System;
+
+namespace Myappliction
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            /*   int i = 0;
+              while (i < 10)
+              {
+                  Console.WriteLine(i);
+                  i++;
+              }
+
+              // do/while try to use
+              int a = 4;
+              do
+              {
+                  Console.WriteLine(a);
+              }
+              while (a > 5);
+
+              // for contion
+              for (int o = 5; o > 6; o++) ;
+              {
+                  Console.WriteLine(o);
+              }
+
+              //This example will only print even values between 0 and 10:
+              for (int q = 0; q <= 10; q = q + 2) ;
+              {
+                  Console.WriteLine(q);
+              } */
+            for (int i = 0; i <= 10; i = i + 3)
+            {
+                Console.WriteLine(i);
+            }
+
+            // matters outer loop
+            for (int d = 1; d <= 6; d++)
+            {
+                Console.WriteLine("outer: " + d);
+
+                // inner loop
+                for (int e = 0; e <= 5; e++)
+                {
+                    Console.WriteLine(" inner: " + e);
+                }
+            }
+            for (int f=0; f<5; f ++)
+            {
+                Console.WriteLine("YES");
+            }
+            // Foreach Loop
+            string[] cars = { "Matiz", "Damas", "Tiko", "Nexia", "Lasseti", "Malibu" };
+            foreach (string g in cars)
+            {
+                Console.WriteLine(g);
+            }
+        }
+    }
+}
